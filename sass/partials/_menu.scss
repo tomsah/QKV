@@ -1,0 +1,52 @@
+/*
+*menu
+*/
+
+#stickyribbon{
+	height:auto;
+	width:100%;
+	max-width: 1048px;
+	background-color: $color0;
+	//top:55%;
+	padding-top: 1%;
+	display:inline-block;
+		// @include media-query(palm){ 
+		// top: 30%;
+		// }
+
+		// @include media-query(lap){ 
+		// top: 20%;
+		// }
+}
+
+.nav-item{
+		@include media-query(portable){ 
+		margin-bottom: 0px;
+		margin-left: -26px;
+		}
+	
+		a{
+		line-height: 1.35em;
+		font-family: $main-font;
+		font-size: 20px;
+		color: $color2;
+		text-decoration: none;
+		white-space: nowrap;
+		padding-bottom: 24px;
+		text-align: center;
+		display: block;
+		
+			&:hover {
+				background: url(../img/hover-dash.png) no-repeat 50%;
+				 display: block;
+			}
+
+		}
+}
+
+
+.active{
+		background: url(../img/hover-dash.png) no-repeat 50%;
+		display: block;	
+}
+

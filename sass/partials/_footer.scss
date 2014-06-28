@@ -1,0 +1,77 @@
+
+
+.footer{
+	border-top: 1px solid $color3;
+	padding: 6px 0px;
+	margin-top: 120px;
+
+	.copyright{
+		padding: 20px 24px;
+		float: right;
+		border-right: 1px solid $color3;
+		font-size: 12px;
+		color: $color1;
+
+
+		@include media-query(lap){ 
+		border-right: none;
+		text-align: center;
+		float: none;
+		}
+
+
+		@include media-query(palm){ 
+		border-right: none;
+		text-align: center;
+		float: none;
+		}
+
+	}
+
+	.contact{
+	padding: 4px 0px;
+	float: left;
+
+			@include media-query(lap){ 
+			text-align: center;
+			float: none;
+			}
+
+			@include media-query(palm){ 
+			text-align: center;
+			float: none;
+			}
+			
+
+		.contact-logo{
+		background: url('../img/email-icon.png') no-repeat 5px 18px;
+		height: 32px;
+		width: 25px;
+		display: inline-block;
+
+
+
+		}
+		
+
+
+			a{
+				color: $color1;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+
+			}
+	}
+
+		/*
+		* overwritting modal social icon
+		*/
+		.pp_social{
+			display: none;
+		}
+
+}
+
+

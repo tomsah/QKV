@@ -1,0 +1,98 @@
+html{
+    font:1em/1.5 Georgia, serif;
+    background-color:#fff;
+    color:#333;
+    height: 100%;
+}
+
+body {
+	min-height: 100%;
+	font-family: $main-font;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    overflow: hidden;
+}
+
+.marg-right{
+	margin-left: -24px;
+
+}
+
+.text-intro{
+		font-family: $main-font;
+		margin: 0 auto;
+		width: 80%;
+		//padding-bottom: 120px;
+	h1{
+			font-family: $title-font;
+			font-size: 49px;
+			text-align: center;
+		}
+
+
+		 p{
+		 	text-align: center;
+		 	font-size: 24px;
+		 	color: $color1;
+		 }
+
+		 img{
+		 	margin: 0 auto;
+		 	display: block;
+		 }
+
+	@include media-query(portable){ 
+	    width: 100%;
+	    padding: 10px;
+
+	}
+}
+
+.main-content{
+	padding: 1% 4% ;
+	background-color: white;
+
+		@include media-query(portable){ 
+		top: 28%;
+		}
+		@include media-query(palm){ 
+		top: 20%;
+		}
+}
+
+
+.main-content-home{
+	//	position: absolute;
+	padding: 1% 4% ;
+		@include media-query(portable){ 
+		top: 50%;
+		}
+		@include media-query(palm){ 
+		top: 31%;
+		}
+}
+
+.main-content-video{
+	clear:both;
+	padding: 1% 4% ;
+
+}
+
+
+.main-section{
+	background: white;
+	z-index: 1;
+	position: relative;
+
+}
+
+
+/*
+* overwritting modal social icon
+*/
+
+.pp_social .facebook{
+	max-width: 49px;
+}
+

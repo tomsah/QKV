@@ -1,0 +1,245 @@
+
+
+.header-container{
+	position:relative;
+	height:600px;
+
+	@include media-query(lap){ 
+	height: 350px;
+	}
+
+	@include media-query(palm){ 
+	 height: 150px;
+	}
+}
+
+
+.header {
+	z-index:3;
+	width: 1024px;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+
+	.logo {
+		position: relative;
+		z-index:3;
+		display: inline-block;
+		margin-top: 5%;
+		margin-left: 6%;
+
+			@include media-query(portable){ 
+			margin-left: 16%;
+			}
+
+			@include media-query(palm){ 
+			margin-left: 7%;
+			margin-top: 3%;
+			}
+
+		img{
+			@include media-query(portable){ 
+			width: 75%;
+			}
+			@include media-query(palm){ 
+			width: 55%;
+			}
+		}
+	}
+
+	.title {
+		position: absolute;
+		display: block;
+		z-index: 3;
+		margin-top: 5%;
+		text-decoration: none;
+	
+		@include media-query(portable){ 
+		top: 35%;
+		margin-left: 8%;
+		}
+
+		@include media-query(palm){ 
+		top: 61%;
+		margin-left: 4%;
+		}
+
+
+			a{
+			text-decoration: none;
+
+			}
+
+			p{
+				margin: 0;
+				color: $color0;
+				font-family: $title-font;
+				font-size: 1.7em;
+				letter-spacing: 1.5pt;
+
+		@include media-query(palm){ 
+		font-size: 16px;
+		}
+			}
+
+			img{ 
+				margin: 0 auto;
+				display: block;
+
+			}
+
+	}
+}
+
+.mask{
+	background-image: url(../img/grid.png);
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 600px;
+	z-index: 2;
+	position: absolute;
+
+	@include media-query(portable){ 
+	min-height: 350px;
+	max-height: 100%;
+	}
+
+	@include media-query(palm){ 
+	min-height: 171px;
+	max-height: 100%;
+	}
+}
+
+.mask-video{
+	@extend .mask;
+	height: 600px;
+}
+
+video{
+
+	width: 100%;
+	height: auto;
+
+@include media-query(lap){ 
+display: none;
+}
+
+@include media-query(palm){ 
+display: none;
+}
+}
+
+#video_background {
+
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 500px;
+	width: 100%;
+	height: auto;
+	z-index: -1000;
+	overflow: hidden;
+	
+}
+
+.video-text{
+	position: absolute;
+	top:0;
+}
+
+
+
+
+.image-header{
+  background: url(../img/banner-video.jpg) no-repeat; 
+  background-size:100%;
+  height: 600px;
+  top:0;
+  left:0;
+  position:absolute;
+  z-index: 1;
+
+@include media-query(desk){ 
+    width: 105%;
+    height: 600px;
+
+
+}
+
+@include media-query(lap){ 
+    width: 100%;
+    height: 400px;
+}
+
+@include media-query(palm){ 
+    width: 100%;
+    height: 200px;
+}
+
+}
+
+.image-header-home{
+	@extend .image-header;
+	background: url(../img/banner-homepage-alt.jpg) no-repeat; 
+	background-size:100%;
+  	height: 600px;
+
+  	@include media-query(desk){ 
+    width: 105%;
+    height: 600px;
+}
+
+@include media-query(lap){ 
+    width: 100%;
+    height: 400px;
+}
+
+@include media-query(palm){ 
+    width: 100%;
+    height: 200px;
+}
+
+}
+
+.image-header-bio{
+	@extend .image-header;
+	background: url(../img/banner-bios.jpg) no-repeat; 
+  	background-size:100%;
+  	height: 600px;
+
+  	@include media-query(desk){ 
+    width: 105%;
+    height: 600px;
+}
+
+@include media-query(lap){ 
+    width: 100%;
+    height: 400px;
+}
+
+@include media-query(palm){ 
+    width: 100%;
+    height: 200px;
+}
+}
+
+.image-header-striations{
+	@extend .image-header;
+	background: url(../img/banner-striations.png) no-repeat; 
+  	background-size:100%;
+  	height: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+

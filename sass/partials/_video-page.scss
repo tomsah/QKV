@@ -1,0 +1,50 @@
+
+
+.video-container{
+	margin-bottom: 20px;
+
+	@include media-query(palm){ 
+	margin:auto 0;
+	}
+
+}
+
+.video-link{
+	padding-bottom: 5%;
+	padding-top: 5%;
+	
+
+	a{
+	width:293px;
+	height: 166px;
+	display:block;
+	margin-bottom: 20px;
+	}
+
+	span{
+		font-family: $main-font;
+		font-size: 18px;
+		color: $color1;
+	}
+
+	p{
+		font-family: $main-font;
+		font-size: 14px;
+		color: $color1;
+	}
+	@include media-query(palm){ 
+	margin: -13px;
+	}
+
+}
+
+
+.video-section-title{
+padding-bottom: 10px;
+border-bottom: 1px solid $color3;
+color: $color2;
+font-family: $title-font;
+font-size: 28px;
+margin-left: 24px;
+
+}

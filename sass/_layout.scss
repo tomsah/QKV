@@ -1,0 +1,152 @@
+
+.wrapper{
+    @extend %grid;
+}
+
+ // full width container
+.container {
+  width: auto;
+}
+
+// content wrapper 1024px
+.content-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+    @include media-query(lap) { 
+      margin: 0 2%;
+    }
+    @include media-query(palm) { 
+      margin: 0 2%;
+    }
+}
+
+// responsive grid width classes
+.column-wrapper{   
+    @extend %grid;
+}
+
+
+.column-full{
+  @extend %grid__item;   
+}
+ 
+.column-half{
+    @extend %grid__item;
+    @extend %desk--one-half;
+    @extend %lap--one-whole;
+
+}
+
+ .column-half-palm-full{
+    @extend %grid__item;
+    @extend %desk--one-half;
+    @extend %lap--one-half;
+    @extend %palm--one-whole;
+
+}
+
+.column-third{
+    @extend %grid__item;
+    @extend %desk--one-third;
+    @extend %lap--one-third;
+    @extend %palm--one-whole;
+}
+/*
+ * third width responds into half width for tablet the full 
+ */
+.column-third-half{
+    @extend %grid__item;
+    @extend %desk--one-third;
+    @extend %lap--one-half;
+    @extend %palm--one-whole;
+}
+
+.column-two-thirds-half{
+    @extend %grid__item;
+    @extend %desk--two-thirds;
+    @extend %lap--one-half;
+    @extend %palm--one-whole;
+}
+
+/*
+ * Half width responds into full width
+ */
+.column-two-thirds{
+    @extend %grid__item;
+    @extend %desk--two-thirds;
+    @extend %lap--two-thirds;
+    @extend %palm--one-whole;
+}
+ 
+ /*
+ * Quarter width which responds to a third then half
+ */
+.column-quarter{
+    @extend %grid__item;
+    @extend %desk--one-quarter;
+    @extend %lap--one-quarter;
+    @extend %portable--one-third;
+    @extend %palm--one-half;
+
+}
+/*
+ * Quarter width which responds into full width
+ */
+.column-quarter-full{
+    @extend %grid__item;
+    @extend %desk--one-quarter;
+    @extend %lap--one-quarter;
+    @extend %palm--one-whole;
+
+}
+.column-three-quarters{
+    @extend %grid__item;
+    @extend %desk--three-quarters;
+    @extend %lap--three-quarters;
+    @extend %palm--one-whole;
+
+}
+
+
+// columns using push right behaviour
+.column-third-right{
+    
+    @extend %grid__item;
+    @extend %desk--one-third;
+    @extend %lap--one-half;
+    @extend %palm--one-whole;    
+    @extend %push--desk--two-thirds;
+    @extend %push--lap--one-half;
+
+}
+.column-half-right{
+    
+    @extend %grid__item;
+    @extend %desk--one-half;
+    @extend %lap--one-half;
+    @extend %palm--one-whole;    
+    @extend %push--desk--one-half;
+    @extend %push--lap--one-half;
+
+}
+.column-two-thirds-right{
+    
+    @extend %grid__item;
+    @extend %desk--two-thirds;
+    @extend %lap--two-thirds;
+    @extend %palm--one-whole;    
+    @extend %push--desk--one-third;
+    @extend %push--lap--one-third;
+
+}
+
+.column-third-test{
+    background-color:green;
+    @extend %grid__item;
+    @extend %desk--one-third;
+    @extend %portable--one-third;
+
+    @include media-query(portable){ 
+    background-color:yellow;
+}
+}

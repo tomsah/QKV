@@ -1,0 +1,50 @@
+.bio-holder{
+	margin-bottom: 70px;
+}
+
+.bio {
+font-family: $main-font;
+color: $color2;
+	.name{
+	
+	font-size: 24px;
+
+}
+
+p {
+ font-size: 18px;
+	
+}
+
+.main-text{
+	display: none;
+}
+
+a{
+		font-style: italic;
+		color: $color2;
+		text-decoration: none;
+}
+
+
+img{
+	float: right;
+}
+
+}
+
+
+.show-more{
+	text-decoration: none;
+	color: $color1;
+	white-space: nowrap;
+    padding-bottom: 24px;
+	text-align: center;
+	display: block;
+	float: left;
+
+		&:hover {
+			background: url(../img/hover-dash.png) no-repeat 50%;
+			 display: block;
+		}
+}
